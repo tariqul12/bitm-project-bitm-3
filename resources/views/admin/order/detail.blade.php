@@ -68,7 +68,7 @@
                                     @foreach($order->orderDetails as $orderDetails)
                                         <tr>
                                             <td>{{$loop->iteration}}</td>
-                                            <td>{!!'<b>Name:<b/>'. $orderDetails->product_name. '<br/>' . '<b>Code:<b/>'.$orderDetails->product_code.' '!!}</td>
+                                            <td>{!!'<b>Name:</b>'. $orderDetails->product_name. '</br> <b>Code:</b>'.$orderDetails->product_code.' '!!}</td>
                                             <td>{{$orderDetails->product_price}}</td>
                                             <td>{{$orderDetails->product_qty}}</td>
                                             <td>{{$orderDetails->product_qty * $orderDetails->product_price}}</td>
