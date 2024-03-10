@@ -39,4 +39,5 @@ class CategoryController extends Controller
         Category::deleteCategory($id);
         return redirect('/category/manage')->with('message', 'Category info delete successfully.');
     }
+
 }

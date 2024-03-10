@@ -16,6 +16,7 @@ use App\Http\Controllers\OrderController;
 
 Route::get('/',[ShopgridController::class,'index'])->name('home');
 Route::get('/product-category/{id}',[ShopgridController::class,'category'])->name('product-category');
+Route::get('/product-sub-category/{id}',[ShopgridController::class,'subCategory'])->name('product-sub-category');
 Route::get('/product-detail/{id}',[ShopgridController::class,'product'])->name('product-detail');
 
 Route::post('/cart/add',[CartController::class,'addCart'])->name('cart.add');

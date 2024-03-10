@@ -234,7 +234,7 @@
 
                                 <ul class="inner-sub-category">
                                     @foreach($category->subCategory as $subCategory)
-                                    <li><a href="">{{$subCategory->name}}</a></li>
+                                    <li><a href="{{route('product-sub-category',['id'=>$subCategory->id])}}">{{$subCategory->name}}</a></li>
                                     @endforeach
                                 </ul>
                                 @endif
